@@ -65,31 +65,37 @@
         >;
     };
     
-    zero_encoder: encoder_zero {
+    top_encoder: encoder_top {
         compatible = "apls,ec11";
-        label = "ENCODER_ZERO";
+        label = "TOP_ENCODER";
         a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-        status = "disabled";
+		status = "disabled";
     };
 
-    one_encoder: encoder_one {
+    mid_encoder: encoder_mid {
         compatible = "apls,ec11";
-        label = "ENCODER_ONE";
+        label = "MID_ENCODER";
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-        status = "disabled";
+		status = "disabled";
     };
-    two_encoder: encoder_two {
+    bottom_encoder: encoder_bottom {
         compatible = "apls,ec11";
-        label = "ENCODER_TWO";
+        label = "BOTTOM_ENCODER";
         a-gpios = <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-        status = "disabled";
+		status = "disabled";
     };
+
+	sensors: sensors {
+		compatible = "zmk,keymap-sensors";
+		status = "disabled";
+		sensors = <>;
+	};
 
 	leds {
 		compatible = "gpio-leds";

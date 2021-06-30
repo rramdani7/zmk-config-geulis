@@ -111,20 +111,23 @@
 	};
 
     // Uncomment to enable the encoder.
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&zero_encoder &one_encoder &two_encoder>;
-    };
+   
 };
 
-&zero_encoder {
+&sensors {
+	status = "okay";
+	sensors = <&top_encoder &mid_encoder &bottom_encoder>;
+};
+
+
+&top_encoder {
     status = "okay";
 };
 
-&one_encoder {
+&mid_encoder {
     status = "okay";
 };
 
-&two_encoder {
+&bottom_encoder {
     status = "okay";
 };
