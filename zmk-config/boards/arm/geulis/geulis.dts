@@ -167,7 +167,7 @@
 	};
 };
 
-&spi0 {
+&spi1 {
 	compatible = "nordic,nrf-spim";
 	/* Cannot be used together with i2c0. */
 	status = "okay";
