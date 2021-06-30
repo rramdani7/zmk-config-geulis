@@ -74,27 +74,30 @@
 		status = "disabled";
     };
 
-    // mid_encoder: encoder_mid {
-    //     compatible = "apls,ec11";
-    //     label = "MID_ENCODER";
-    //     a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //     b-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //     resolution = <4>;
-	// 	status = "disabled";
-    // };
-    // bottom_encoder: encoder_bottom {
-    //     compatible = "apls,ec11";
-    //     label = "BOTTOM_ENCODER";
-    //     a-gpios = <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //     b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //     resolution = <4>;
-	// 	status = "disabled";
-    // };
+    mid_encoder: encoder_mid {
+        compatible = "apls,ec11";
+        label = "MID_ENCODER";
+        a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <4>;
+		status = "disabled";
+    };
+    bottom_encoder: encoder_bottom {
+        compatible = "apls,ec11";
+        label = "BOTTOM_ENCODER";
+        a-gpios = <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <4>;
+		status = "disabled";
+    };
 
-	sensors {
+	sensors: sensors {
 		compatible = "zmk,keymap-sensors";
-		sensors = <&top_encoder>;
+		status = "disabled";
+		sensors = <>;
 	};
+
+	
 
 	leds {
 		compatible = "gpio-leds";
@@ -168,7 +171,7 @@
 	compatible = "nordic,nrf-spim";
 	/* Cannot be used together with i2c0. */
 	status = "okay";
-	sck-pin = <32>;
+	sck-pin = <5>;
 	mosi-pin = <16>;
 	miso-pin = <13>;
 

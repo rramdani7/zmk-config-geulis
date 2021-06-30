@@ -49,7 +49,7 @@
 	             &kp LCTL &kp   LALT   &lt NAV SPC   &kp  LGUI     &lt NAV SPC     &kp  RGUI  &mo FUN 
 			>;
 
-		    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN >;
+		    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
 		};
 
         windows {
@@ -63,7 +63,7 @@
 	            &kp LCTL &kp  LGUI    &lt 4 SPC   &kp  LALT   &lt 4 SPC     &kp  RGUI   &mo FUN
 			>;
 
-		    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN >;
+		    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
 		};
 
         functions {
@@ -91,7 +91,7 @@
 	        ___ ___ ___ ___ ___ ___ ___ 
 			>;
 
-		    sensor-bindings = <&inc_dec_kp C_NEXT C_PREV >;
+		    sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
 		};
 
         navigations {
@@ -105,7 +105,7 @@
 	    ___ ___ ___ ___ ___ ___ ___ 
 			>;
 
-		    sensor-bindings = <&inc_dec_kp C_NEXT C_PREV >;
+		    sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
 		};
        
 	};
@@ -114,16 +114,20 @@
    
 };
 
+&sensors {
+	status = "okay";
+	sensors = <&top_encoder &mid_encoder &bottom_encoder>;
+};
 
 
 &top_encoder {
     status = "okay";
 };
 
-// &mid_encoder {
-//     status = "okay";
-// };
+&mid_encoder {
+    status = "okay";
+};
 
-// &bottom_encoder {
-//     status = "okay";
-// };
+&bottom_encoder {
+    status = "okay";
+};
