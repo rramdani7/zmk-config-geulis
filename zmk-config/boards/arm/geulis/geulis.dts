@@ -68,8 +68,8 @@
     top_encoder: encoder_top {
         compatible = "apls,ec11";
         label = "TOP_ENCODER";
-        a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
 		status = "disabled";
     };
