@@ -1,0 +1,42 @@
+# SPDX-License-Identifier: MIT
+
+CONFIG_SOC_SERIES_NRF52X=y
+CONFIG_SOC_NRF52840_QIAA=y
+CONFIG_BOARD_GEULIS=y
+
+# Enable MPU
+CONFIG_ARM_MPU=y
+
+# enable GPIO
+CONFIG_GPIO=y
+
+CONFIG_USE_DT_CODE_PARTITION=y
+
+CONFIG_MPU_ALLOW_FLASH_WRITE=y
+CONFIG_NVS=y
+CONFIG_SETTINGS_NVS=y
+CONFIG_FLASH=y
+CONFIG_FLASH_PAGE_LAYOUT=y
+CONFIG_FLASH_MAP=y
+
+# Uncomment to enable encoder
+CONFIG_EC11=y
+CONFIG_EC11_TRIGGER_GLOBAL_THREAD=y
+
+# Uncomment to enable oled display
+#CONFIG_ZMK_DISPLAY=y
+
+# Uncomment to enable deep sleep
+#CONFIG_ZMK_SLEEP=y
+#CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=420000
+
+# Uncomment to enable RGB underglow
+#CONFIG_ZMK_RGB_UNDERGLOW=y
+#CONFIG_WS2812_STRIP=y
+
+# Uncomment to ried underglow power to ext power
+#CONFIG_ZMK_RGB_UNDERGLOW_EXT_POWER=n
+
+# Uncomment to enable logging
+CONFIG_ZMK_USB_LOGGING=y
+
