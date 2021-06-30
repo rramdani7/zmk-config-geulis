@@ -79,7 +79,7 @@
         label = "ENCODER_ONE";
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <2>;
+        resolution = <4>;
         status = "disabled";
     };
     two_encoder: encoder_two {
@@ -87,7 +87,7 @@
         label = "ENCODER_TWO";
         a-gpios = <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <2>;
+        resolution = <4>;
         status = "disabled";
     };
 
