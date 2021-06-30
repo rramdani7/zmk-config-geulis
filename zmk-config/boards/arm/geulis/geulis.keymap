@@ -124,10 +124,10 @@
     status = "okay";
 };
 
-&mid_encoder {
-    status = "okay";
-};
+// &mid_encoder {
+//     status = "okay";
+// };
 
-&bottom_encoder {
-    status = "okay";
-};
+// &bottom_encoder {
+//     status = "okay";
+// };
