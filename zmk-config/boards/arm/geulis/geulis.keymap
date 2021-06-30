@@ -120,15 +120,15 @@
     };
 };
 
-&one_encoder {
+&zero_encoder {
     status = "okay";
 };
 
 // Uncomment to enable all encoder
-&two_encoder {
-    status = "okay";
-};
+// &two_encoder {
+//     status = "okay";
+// };
 
-&zero_encoder {
-    status = "okay";
-};
+// &zero_encoder {
+//     status = "okay";
+// };
