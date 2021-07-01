@@ -171,7 +171,7 @@
 	compatible = "nordic,nrf-spim";
 	/* Cannot be used together with i2c0. */
 	status = "okay";
-	sck-pin = <14>;
+	sck-pin = <5>;
 	mosi-pin = <16>;
 	miso-pin = <13>;
 
