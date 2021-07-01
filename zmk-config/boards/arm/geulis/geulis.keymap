@@ -42,7 +42,7 @@
 			label = "Macos";
 
 			bindings = <
-	&kp C_PP     &kp ESC &kp NUM_1  &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp MINUS &kp EQL  &sftdel &kp DEL
+	&kp ESC &kp GRAVE &kp NUM_1  &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp MINUS &kp EQL  &sftdel &kp DEL
 	&kp PG_UP    &kp TAB  &kp   Q   &kp   W   &kp   E   &kp   R   &kp   T   &kp   Y   &kp   U   &kp   I   &kp   O   &kp   P   &kp LBKT &kp RBKT &kp BSLH 
 	&kp PG_DN    &kp CAPS  &kp   A   &kp   S   &kp   D   &kp   F   &kp   G   &kp   H   &kp   J   &kp   K   &kp   L   &kp  SCLN  &kp  QUOT        &kp RET
 	             &kp LSFT  &kp   Z   &kp   X   &kp   C   &kp   V   &kp   B &kp   B   &kp   N   &kp   M   &kp  CMMA &kp  DOT  &kp FSLH      &kp RSFT &mo SET
@@ -56,7 +56,7 @@
 			label = "Windows";
 
 			bindings = <
-	&kp C_PP    &kp ESC &kp NUM_1  &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp MINUS &kp EQL  &sftdel &kp DEL
+	&kp ESC   &kp GRAVE  &kp NUM_1  &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp MINUS &kp EQL  &sftdel &kp DEL
 	&kp PG_UP &kp TAB  &kp   Q   &kp   W   &kp   E   &kp   R   &kp   T   &kp   Y   &kp   U   &kp   I   &kp   O   &kp   P   &kp LBKT &kp RBKT &kp BSLH 
 	&kp PG_DN     &kp CAPS  &kp   A   &kp   S   &kp   D   &kp   F   &kp   G   &kp   H   &kp   J   &kp   K   &kp   L   &kp  SCLN  &kp  QUOT        &kp RET
 	            &kp LSFT  &kp   Z   &kp   X   &kp   C   &kp   V   &kp   B &kp   B   &kp   N   &kp   M   &kp  CMMA &kp  DOT  &kp FSLH      &kp RSFT &mo SET
@@ -114,20 +114,20 @@
    
 };
 
-&sensors {
-	status = "okay";
-	sensors = <&top_encoder &mid_encoder &bottom_encoder>;
-};
+// &sensors {
+// 	status = "okay";
+// 	sensors = <&top_encoder &mid_encoder &bottom_encoder>;
+// };
 
 
-&top_encoder {
-    status = "okay";
-};
+// &top_encoder {
+//     status = "okay";
+// };
 
-&mid_encoder {
-    status = "okay";
-};
+// &mid_encoder {
+//     status = "okay";
+// };
 
-&bottom_encoder {
-    status = "okay";
-};
+// &bottom_encoder {
+//     status = "okay";
+// };
