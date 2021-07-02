@@ -71,7 +71,7 @@
         a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-		status = "disabled";
+		status = "okay";
     };
 
     mid_encoder: encoder_mid {
@@ -80,7 +80,7 @@
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-		status = "disabled";
+		status = "okay";
     };
     bottom_encoder: encoder_bottom {
         compatible = "apls,ec11";
@@ -88,7 +88,7 @@
         a-gpios = <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-		status = "disabled";
+		status = "okay";
     };
 
 	sensors: sensors {
@@ -184,7 +184,7 @@
 		spi-max-frequency = <4000000>;
 
 		/* WS2812 */
-		chain-length = <6>; /* LED strip length */
+		chain-length = <18>; /* LED strip length */
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 	};
