@@ -71,7 +71,6 @@
         a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-		status = "okay";
     };
 
     mid_encoder: encoder_mid {
@@ -80,7 +79,6 @@
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-		status = "okay";
     };
     bottom_encoder: encoder_bottom {
         compatible = "apls,ec11";
@@ -88,14 +86,12 @@
         a-gpios = <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-		status = "okay";
     };
 
-	sensors: sensors {
-		compatible = "zmk,keymap-sensors";
-		status = "disabled";
-		sensors = <>;
-	};
+	sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&top_encoder &mid_encoder &bottom_encoder>;
+    };
 
 	
 
@@ -115,7 +111,7 @@
 		compatible = "zmk,ext-power-generic";
 		label = "EXT_POWER";
 		control-gpios = <&gpio1 9 GPIO_ACTIVE_LOW>;
-		init-delay-ms = <300>;
+		init-delay-ms = <180>;
 	};
 
 	vbatt {

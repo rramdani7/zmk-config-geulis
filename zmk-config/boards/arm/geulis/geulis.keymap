@@ -114,12 +114,6 @@
    
 };
 
-&sensors {
-	status = "okay";
-	sensors = <&top_encoder &mid_encoder &bottom_encoder>;
-};
-
-
 &top_encoder {
     status = "okay";
 };
