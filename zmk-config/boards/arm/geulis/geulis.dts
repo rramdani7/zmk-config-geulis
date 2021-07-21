@@ -66,7 +66,7 @@
     };
     
     top_encoder: encoder_top {
-        compatible = "apls,ec11";
+        compatible = "alps,ec11";
         label = "TOP_ENCODER";
         a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -74,14 +74,14 @@
     };
 
     mid_encoder: encoder_mid {
-        compatible = "apls,ec11";
+        compatible = "alps,ec11";
         label = "MID_ENCODER";
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
     };
     bottom_encoder: encoder_bottom {
-        compatible = "apls,ec11";
+        compatible = "alps,ec11";
         label = "BOTTOM_ENCODER";
         a-gpios = <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -123,6 +123,17 @@
 	};
 };
 
+&top_encoder {
+    status = "okay";
+};
+
+&mid_encoder {
+    status = "okay";
+};
+
+&bottom_encoder {
+    status = "okay";
+};
 
 &adc {
 	status = "okay";
