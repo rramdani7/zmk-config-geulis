@@ -28,7 +28,7 @@ CONFIG_ZMK_DISPLAY=y
 
 # Uncomment to enable deep sleep (default to 15 minutes)
 CONFIG_ZMK_SLEEP=y
-# CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=600000
+# CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=60000
 
 # Uncomment to enable RGB underglow
 CONFIG_ZMK_RGB_UNDERGLOW=y
