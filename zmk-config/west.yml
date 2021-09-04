@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: karnadii
-      revision: main
+      revision: 2.4
       import: app/west.yml
   self:
     path: zmk-config
