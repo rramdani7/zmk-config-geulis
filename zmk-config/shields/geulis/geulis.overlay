@@ -6,10 +6,6 @@
 
 #include "geulis.dtsi"
 
-// &default_transform {
-// 	col-offset = <1>;
-// };
-
 / {
 
     kscan0: kscan {
@@ -76,9 +72,9 @@
     };
 };
 
-&top_encoder {
-    status = "okay";
-};
+// &top_encoder {
+//     status = "okay";
+// };
 
 // &mid_encoder {
 //     status = "okay";
