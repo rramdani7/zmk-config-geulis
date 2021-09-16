@@ -1,32 +1,10 @@
+# Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-
-if BOARD_GEULIS
+if SHIELD_GEULIS
 
 config ZMK_KEYBOARD_NAME
-	default "Geulis"
-
-if USB
-
-config USB_NRFX
-	default y
-
-config USB_DEVICE_STACK
-	default y
-
-endif # USB
-
-config BT_CTLR
-	default BT
-
-config ZMK_BLE
-	default y
-
-config ZMK_USB
-	default y
-
-config ZMK_BATTERY_VOLTAGE_DIVIDER
-	default y
+    default "Geulis"
 
 if ZMK_DISPLAY
 
@@ -64,5 +42,6 @@ endchoice
 
 endif # LVGL
 
-endif # BOARD_GEULIS
+endif
+
 
