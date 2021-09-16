@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-// #define BASE_MAC 0
-#define BASE_WIN 0
-#define FUN 1
-#define SET 2
-#define NAV 3
+#define BASE_MAC 0
+#define BASE_WIN 1
+#define FUN 2
+#define SET 3
+#define NAV 4
 
 #define XXX &none
 #define ___ &trans
